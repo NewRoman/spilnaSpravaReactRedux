@@ -6,3 +6,8 @@ For render page using react
 
 # spilnaSpravaReactRedux
 Creation list of users using creation forms(redux-form) 
+
+## For start project open terminal and execute next comands
+$ yarn install OR nmp install
+### After that start local server
+$ yarn start OR npm start
