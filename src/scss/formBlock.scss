@@ -1,0 +1,33 @@
+.form-block {
+	label {
+		display: block;
+	}
+	input {
+		padding: 10px;
+		width: 100%;
+
+		border: 1px solid #ddd;
+		box-sizing: border-box;
+	}
+
+	.error-msg {
+		display: inline-block;
+		margin-top: 7px;
+
+		font-size: 12px;
+		color: red;
+	}
+
+	.input-group {
+		margin-bottom: 20px;
+
+		&.error input {
+			box-shadow: 0 0 2px rgba(255, 0, 0, 0.5);
+			border: 1px red solid;
+		}
+	}
+
+	.form-submit {
+		width: 100%;
+	}
+}

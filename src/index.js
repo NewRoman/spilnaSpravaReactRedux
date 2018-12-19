@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import configureStore from './store';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import ItemsListContainer from './containers/ItemsListContainer';
+import ActionsBtnsContainer from './containers/ActionsBtnsContainer';
+import FormContainer from './containers/FormContainer';
+import ToggleVisibleBlockContainer from './containers/ToggleVisibleBlockContainer';
+
+import './scss/App.scss'; 
+ 
+const store = configureStore();
+
+ReactDOM.render(
+  <Provider store={store}>
+    <FormContainer />
+    <ToggleVisibleBlockContainer />
+    <ActionsBtnsContainer />
+    <ItemsListContainer />
+  </Provider>,
+  document.getElementById('root')
+);

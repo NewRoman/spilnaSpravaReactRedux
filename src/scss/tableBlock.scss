@@ -1,0 +1,27 @@
+
+.table-block {
+
+	display: table;
+	width: 100%;
+	margin-top: 10px;
+	// max-width: 768px;
+
+	border-collapse: collapse;
+}
+
+.table-row {
+	display: table-row;
+
+	&.head {
+		background: #dedede;
+	}
+}
+
+.tr,.td {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px 15px;
+
+	border: 1px #333 solid;
+	text-align: center;
+}

@@ -1,0 +1,35 @@
+.toggle-block {
+
+}
+ 
+.check-visible-column {
+	// display: block;
+	label {
+		padding: 5px 10px;
+		display: block;
+
+		cursor: pointer;  
+		background-image: url(/img/show_collumn.png);
+		background-repeat: no-repeat;
+		background-position: right 10px;
+		background-size: contain;
+
+		border-bottom: 1px dashed green;
+
+		font-size: 20px;
+
+		&:hover {
+			background-color: #fefefe;
+		}
+		&.unchecked {
+			background-image: url(/img/hidden_collumn.png);
+			border-bottom: 1px dashed red;
+			
+			text-decoration: line-through;
+		}
+	}
+	input {
+		display: inline-block;
+		opacity: 0;
+	}
+}
